@@ -33,9 +33,6 @@
 	<!-- Link to main style sheet -->
 	<link rel="stylesheet" type="text/css" href="stylesheet/style.css">
 
-	<!-- Animate CSS -->
-	<link rel="stylesheet" href="stylesheet/animate.css">
-
 	<!-- Custom Directive -->
 	<script src='js/appInfo.js'></script>
 
@@ -45,7 +42,7 @@
 
 		var myApp = angular.module('myApp',['ngRoute', 'routeStyles', 'duScroll']);
 
-		// Custom Directive
+		// Custom Directive =================================
 
 		// we are calling this custome directive 'appInfo'
 		myApp.directive('appInfo', function(){
@@ -100,9 +97,10 @@
 		// CONTROLLER =======================================
 		myApp.controller('MeanController', function($scope, MeanFactory, $location, $document){
 
+			// this is what will be read from the custom directive
 			$scope.move = {
 				title: 'Move',
-				developer: 'MOVE, Inc.',
+				developer: 'Batman, Inc.',
 				price: 0.99
 			};
 
